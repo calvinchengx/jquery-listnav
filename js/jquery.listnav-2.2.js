@@ -9,6 +9,11 @@
 *
 * Visit http://www.ihwy.com/labs/jquery-listnav-plugin.aspx for more information.
 *
+* Modified 2012, by Calvin Cheng
+* Version 2.2 (2010/10/29)
+* Works with jQuery 1.7.x and takes in an option allPosition with values "pre" or "post". With "post" as default.
+*
+*
 * Dual licensed under the MIT and GPL licenses:
 *   http://www.opensource.org/licenses/mit-license.php
 *   http://www.gnu.org/licenses/gpl.html
