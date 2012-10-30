@@ -41,6 +41,12 @@
 				$letters = $('.ln-letters', $wrapper).slice(0, 1); // will always be a single item
 				if (opts.showCounts) $letterCount = $('.ln-letter-count', $wrapper).slice(0, 1); // will always be a single item
 
+				if (opts.allPosition == "pre") {
+					createLettersAllHtml($letters, "pre");
+				} else {
+					createLettersAllHtml($letters);
+				}
+
 				addClasses();
 				addNoMatchLI();
 				if (opts.flagDisabled) addDisabledClass();
@@ -48,11 +54,6 @@
 
 				if (!opts.includeAll) $list.show(); // show the list in case the recommendation for includeAll=false was taken
 
-				if (opts.allPosition == "pre") {
-					createLettersAllHtml($letters, "pre");
-				} else {
-					createLettersAllHtml($letters);
-				}
 
 				// remove nav items we don't need
 				//
