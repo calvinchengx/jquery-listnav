@@ -10,7 +10,7 @@
 * Visit http://www.ihwy.com/labs/jquery-listnav-plugin.aspx for more information.
 *
 * Modified 2012, by Calvin Cheng
-* Version 2.2 (2010/10/29)
+* Version 2.2.1 
 * Works with jQuery 1.7.x and takes in an option allPosition with values "pre" or "post". With "post" as default.
 *
 *
@@ -41,6 +41,12 @@
 				$letters = $('.ln-letters', $wrapper).slice(0, 1); // will always be a single item
 				if (opts.showCounts) $letterCount = $('.ln-letter-count', $wrapper).slice(0, 1); // will always be a single item
 
+				if (opts.allPosition == "pre") {
+					createLettersAllHtml($letters, "pre");
+				} else {
+					createLettersAllHtml($letters);
+				}
+
 				addClasses();
 				addNoMatchLI();
 				if (opts.flagDisabled) addDisabledClass();
@@ -48,11 +54,6 @@
 
 				if (!opts.includeAll) $list.show(); // show the list in case the recommendation for includeAll=false was taken
 
-				if (opts.allPosition == "pre") {
-					createLettersAllHtml($letters, "pre");
-				} else {
-					createLettersAllHtml($letters);
-				}
 
 				// remove nav items we don't need
 				//
