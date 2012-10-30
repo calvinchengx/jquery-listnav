@@ -10,7 +10,7 @@
 * Visit http://www.ihwy.com/labs/jquery-listnav-plugin.aspx for more information.
 *
 * Modified 2012, by Calvin Cheng
-* Version 2.2 (2010/10/29)
+* Version 2.2.1 
 * Works with jQuery 1.7.x and takes in an option allPosition with values "pre" or "post". With "post" as default.
 *
 *
